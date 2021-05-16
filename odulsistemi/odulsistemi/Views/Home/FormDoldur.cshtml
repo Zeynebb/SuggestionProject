@@ -1,0 +1,48 @@
+﻿@model odulsistemi.Models.odul_oneri
+
+@{
+    ViewBag.Title = "FormDoldur";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<form action="/Home/FormDoldur" method="post">
+    <table class="form_table" id="label" style=" overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;">
+        <caption id="baslikGiris" style=" text-align: center;
+    font-weight: bold;
+    font-size:25px;
+    margin-left:40px;">Kişisel Öneri Formu</caption>
+        @using (Html.BeginForm("FormDoldur", "Home", FormMethod.Post))
+        {
+            <tr>
+                <td><label class="label_form" for="odul_tipi">Öneri Tipi:</label></td>
+                <td>
+                    @Html.DropDownList("odulTipi_id", null,"Öneri Tipi Seçiniz", htmlAttributes: new { @class = "form-control"})
+                    @Html.ValidationMessageFor(model => model.odulTipi_id, "", new { style = "color: #b94a48;" })
+                </td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="tanim" >Öneri Tanımı:</label></td>
+                <td><textarea type="text" name="tanim" class="inputOzellik" required></textarea> </td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="m_durum" >Mevcut Durum:</label></td>
+                <td><textarea rows="3" cols="40" name="mevcut_durum" class="inputOzellik_uzun" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="y_durum" >Yeni Durum:</label></td>
+                <td><textarea rows="3" cols="40" name="yeni_durum" class="inputOzellik_uzun" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="fayda" >Önerinin Getireceği Fayda:</label></td>
+                <td><textarea rows="3" cols="40" name="fayda" class="inputOzellik_uzun" required></textarea></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td colspan="2"><input type="submit"  class="geriDonButon" value="KAYDET" name="kaydet" /></td>
+            </tr>
+        }
+    </table>
+
+</form>

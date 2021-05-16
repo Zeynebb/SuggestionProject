@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1cb3a885f1334b37913f7dcd3e32003f" Name="Diagram1">
+        <EntityTypeShape EntityType="REEDER_PROJECTModel.odul_kontrol" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="REEDER_PROJECTModel.odul_oneri" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="REEDER_PROJECTModel.odul_tipi" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="REEDER_PROJECTModel.odul_user" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="REEDER_PROJECTModel.FK_odul_kontrol_odul_oneri" ManuallyRouted="false" />
+        <AssociationConnector Association="REEDER_PROJECTModel.FK_odul_kontrol_odul_user" ManuallyRouted="false" />
+        <AssociationConnector Association="REEDER_PROJECTModel.FK_odul_oneri_odul_tipi" ManuallyRouted="false" />
+        <AssociationConnector Association="REEDER_PROJECTModel.FK_odul_oneri_odul_user" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

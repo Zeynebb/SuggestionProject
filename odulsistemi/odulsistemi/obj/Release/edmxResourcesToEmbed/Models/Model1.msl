@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="REEDER_PROJECTModelStoreContainer" CdmEntityContainer="odulSistemiEntities">
+    <EntitySetMapping Name="odul_kontrol">
+      <EntityTypeMapping TypeName="REEDER_PROJECTModel.odul_kontrol">
+        <MappingFragment StoreEntitySet="odul_kontrol">
+          <ScalarProperty Name="kontrol_id" ColumnName="kontrol_id" />
+          <ScalarProperty Name="odul_id" ColumnName="odul_id" />
+          <ScalarProperty Name="durum" ColumnName="durum" />
+          <ScalarProperty Name="red_nedeni" ColumnName="red_nedeni" />
+          <ScalarProperty Name="red_tarihi" ColumnName="red_tarihi" />
+          <ScalarProperty Name="uygulama_tarihi" ColumnName="uygulama_tarihi" />
+          <ScalarProperty Name="kabul_tarihi" ColumnName="kabul_tarihi" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="odul_oneri">
+      <EntityTypeMapping TypeName="REEDER_PROJECTModel.odul_oneri">
+        <MappingFragment StoreEntitySet="odul_oneri">
+          <ScalarProperty Name="odul_id" ColumnName="odul_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="odulTipi_id" ColumnName="odulTipi_id" />
+          <ScalarProperty Name="tanim" ColumnName="tanim" />
+          <ScalarProperty Name="odul_tarih" ColumnName="odul_tarih" />
+          <ScalarProperty Name="mevcut_durum" ColumnName="mevcut_durum" />
+          <ScalarProperty Name="yeni_durum" ColumnName="yeni_durum" />
+          <ScalarProperty Name="fayda" ColumnName="fayda" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="odul_tipi">
+      <EntityTypeMapping TypeName="REEDER_PROJECTModel.odul_tipi">
+        <MappingFragment StoreEntitySet="odul_tipi">
+          <ScalarProperty Name="odulTipi_id" ColumnName="odulTipi_id" />
+          <ScalarProperty Name="tip_adi" ColumnName="tip_adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="odul_user">
+      <EntityTypeMapping TypeName="REEDER_PROJECTModel.odul_user">
+        <MappingFragment StoreEntitySet="odul_user">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="kullanici_adi" ColumnName="kullanici_adi" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+          <ScalarProperty Name="sicilNo" ColumnName="sicilNo" />
+          <ScalarProperty Name="unvan" ColumnName="unvan" />
+          <ScalarProperty Name="bolum" ColumnName="bolum" />
+          <ScalarProperty Name="yetkiID" ColumnName="yetkiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

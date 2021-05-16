@@ -1,0 +1,64 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@model IPagedList<odulsistemi.Models.odul_kontrol>
+@{
+    ViewBag.Title = "onaySayfa";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+<form>
+    <table id="tableOnay" style=" border-collapse: collapse;margin-top: 30px;text-align: center;margin-left: auto;margin-right: auto;table-layout: fixed;">
+        <caption id="onayBaslik" style="font-size: 20px;font-weight: bold;">ONAYLANMIŞ ÖNERİLER</caption>
+        <tr>
+            <th style="background-color:#f8f5f5; height:40px; width:80px;border: 1px solid black; text-align:center;">NO</th>
+            <th style="background-color:#f8f5f5; width:90px;border: 1px solid black;text-align:center;">TARİH</th>
+            <th style="background-color:#f8f5f5; width:200px;border: 1px solid black;text-align:center;">AD SOYAD</th>
+            <th style="background-color:#f8f5f5; width:120px;border: 1px solid black;text-align:center;">SİCİL NO</th>
+            <th style="background-color:#f8f5f5; width:300px;border: 1px solid black;text-align:center;">ÖNERİ TANIMI</th>
+            <th style="background-color:#f8f5f5; width:130px;border: 1px solid black;text-align:center;">KABUL TARİHİ</th>
+            <th style="background-color:#f8f5f5; width:170px;border: 1px solid black;text-align:center;">UYGULAMA TARİHİ</th>
+            <th style="background-color:#f8f5f5; width:170px;border: 1px solid black;text-align:center;"></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="background-color:white;font-weight:lighter; height:50px; width:80px;border: 1px solid black; text-align:center;max-width:100px;word-wrap:break-word;">
+                    @Html.DisplayFor(modelItem => item.kontrol_id)
+                </td>
+                <td style="background-color:white;font-weight:lighter; width:80px;border: 1px solid black;text-align:center;max-width:100px;word-wrap:break-word;">
+                    @Html.DisplayFor(modelItem => item.odul_oneri.odul_tarih)
+                </td>
+                <td style="background-color:white;font-weight:lighter; width:150px;border: 1px solid black;text-align:center;max-width:180px;word-wrap:break-word;">
+                    @Html.DisplayFor(modelItem => item.odul_oneri.odul_user.ad)
+                    @Html.DisplayFor(modelItem => item.odul_oneri.odul_user.soyad)
+                </td>
+                <td style="background-color:white;font-weight:lighter; width:80px;border: 1px solid black;text-align:center;max-width:100px;word-wrap:break-word">
+                    @Html.DisplayFor(modelItem => item.odul_oneri.odul_user.sicilNo)
+                </td>
+                <td style="background-color:white;font-weight:lighter; width:250px;border: 1px solid black;text-align:center;max-width:300px;word-wrap:break-word;">
+                    @Html.DisplayFor(modelItem => item.odul_oneri.odul_tipi.tip_adi)
+                </td>
+                <td style="background-color:white;font-weight:lighter; width:120px;border: 1px solid black;text-align:center;max-width:150px;word-wrap:break-word;">
+                    @Html.DisplayFor(modelItem => item.kabul_tarihi)
+                </td>
+                <td style="background-color:white;font-weight:lighter; width:130px;border: 1px solid black;text-align:center;max-width:150px;word-wrap:break-word;">
+                    @Html.DisplayFor(modelItem => item.uygulama_tarihi)
+                </td>
+                <td style="background-color:white;font-weight:lighter; width:100px;border: 1px solid black;text-align:center;max-width:150px;word-wrap:break-word;">
+                    @Html.ActionLink("Görüntüle", "onayGoruntule", new { id = item.odul_id })
+                </td>
+
+            </tr>
+            <tr>
+                <td id="onayTD" colspan="4" style="background-color:#f8f5f5; height:50px; border: 1px solid black; font-weight:bold;">
+                    KABUL EDEN BÖLÜM/KİŞİ
+                </td>
+                <td id="redTD2" colspan="5" style="background-color:#f8f5f5; height:50px; font-weight:lighter; border: 1px solid black;">
+                   
+                    @Html.DisplayFor(modelItem => item.odul_user.ad)
+                    @Html.DisplayFor(modelItem => item.odul_user.soyad)
+                    @Html.DisplayFor(modelItem => item.odul_user.bolum)
+                </td>
+            </tr>
+        }
+    </table>
+</form>

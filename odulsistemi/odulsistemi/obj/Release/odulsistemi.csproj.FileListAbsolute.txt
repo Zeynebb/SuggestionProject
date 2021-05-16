@@ -1,0 +1,211 @@
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\ApplicationInsights.config
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\csc.exe
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\csc.exe.config
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\csc.rsp
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\csi.exe
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\csi.exe.config
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\csi.rsp
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.AppContext.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Console.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.IO.Compression.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.IO.Pipes.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Security.Claims.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Threading.Thread.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.ValueTuple.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\vbc.exe
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\vbc.exe.config
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\vbc.rsp
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\VBCSCompiler.exe
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\odulsistemi.dll.config
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\odulsistemi.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\odulsistemi.pdb
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Antlr3.Runtime.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\EntityFramework.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\EntityFramework.SqlServer.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.AI.Web.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Newtonsoft.Json.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\PagedList.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\PagedList.Mvc.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.Helpers.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.Mvc.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.Optimization.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.Razor.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.WebPages.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\WebGrease.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\EntityFramework.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\EntityFramework.SqlServer.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\PagedList.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\PagedList.Mvc.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.Helpers.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.Mvc.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.Optimization.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.Razor.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.WebPages.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Antlr3.Runtime.pdb
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Newtonsoft.Json.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\Microsoft.AI.Web.xml
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\tr\System.Web.Razor.resources.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\obj\Release\odulsistemi.csproj.CoreCompileInputs.cache
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\obj\Release\odulsistemi.csproj.CopyComplete
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\obj\Release\odulsistemi.dll
+C:\Users\MURVETK.REEDER\Desktop\verimor\odulsistemi\odulsistemi\obj\Release\odulsistemi.pdb
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\ApplicationInsights.config
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\csc.exe
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\csc.exe.config
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\csc.rsp
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\csi.exe
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\csi.exe.config
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\csi.rsp
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.AppContext.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Console.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.IO.Compression.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.IO.Pipes.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Security.Claims.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Threading.Thread.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.ValueTuple.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\vbc.exe
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\vbc.exe.config
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\vbc.rsp
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\VBCSCompiler.exe
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\odulsistemi.dll.config
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\odulsistemi.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\odulsistemi.pdb
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Antlr3.Runtime.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\EntityFramework.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\EntityFramework.SqlServer.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.AI.Web.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Newtonsoft.Json.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\PagedList.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\PagedList.Mvc.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.Helpers.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.Mvc.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.Optimization.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.Razor.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.WebPages.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\WebGrease.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\EntityFramework.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\EntityFramework.SqlServer.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\PagedList.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\PagedList.Mvc.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.Helpers.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.Mvc.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.Optimization.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.Razor.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.WebPages.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Antlr3.Runtime.pdb
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Newtonsoft.Json.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\Microsoft.AI.Web.xml
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\tr\System.Web.Razor.resources.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\obj\Release\odulsistemi.csproj.CoreCompileInputs.cache
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\obj\Release\odulsistemi.csproj.CopyComplete
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\obj\Release\odulsistemi.dll
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\obj\Release\odulsistemi.pdb
+C:\Users\MURVETK.REEDER\Documents\Visual Studio 2017\projelerim\odulsistemi\odulsistemi\obj\Release\odulsistemi.csprojAssemblyReference.cache

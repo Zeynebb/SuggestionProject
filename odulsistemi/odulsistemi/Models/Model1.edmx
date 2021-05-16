@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="odulSistemiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="odul_kontrol">
+          <Key>
+            <PropertyRef Name="kontrol_id" />
+          </Key>
+          <Property Name="kontrol_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="odul_id" Type="int" />
+          <Property Name="durum" Type="nvarchar" MaxLength="50" />
+          <Property Name="red_nedeni" Type="nvarchar" MaxLength="50" />
+          <Property Name="red_tarihi" Type="datetime" />
+          <Property Name="uygulama_tarihi" Type="datetime" />
+          <Property Name="kabul_tarihi" Type="datetime" />
+          <Property Name="user_id" Type="int" />
+        </EntityType>
+        <EntityType Name="odul_oneri">
+          <Key>
+            <PropertyRef Name="odul_id" />
+          </Key>
+          <Property Name="odul_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="user_id" Type="int" />
+          <Property Name="odulTipi_id" Type="int" />
+          <Property Name="tanim" Type="nvarchar" MaxLength="50" />
+          <Property Name="odul_tarih" Type="datetime" />
+          <Property Name="mevcut_durum" Type="nvarchar" MaxLength="50" />
+          <Property Name="yeni_durum" Type="nvarchar" MaxLength="50" />
+          <Property Name="fayda" Type="nvarchar" MaxLength="50" />
+          <Property Name="status" Type="int" />
+        </EntityType>
+        <EntityType Name="odul_tipi">
+          <Key>
+            <PropertyRef Name="odulTipi_id" />
+          </Key>
+          <Property Name="odulTipi_id" Type="int" Nullable="false" />
+          <Property Name="tip_adi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="odul_user">
+          <Key>
+            <PropertyRef Name="user_id" />
+          </Key>
+          <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kullanici_adi" Type="nvarchar" MaxLength="50" />
+          <Property Name="ad" Type="nvarchar" MaxLength="50" />
+          <Property Name="soyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="sifre" Type="nvarchar" MaxLength="50" />
+          <Property Name="sicilNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="unvan" Type="nvarchar" MaxLength="50" />
+          <Property Name="bolum" Type="nvarchar" MaxLength="50" />
+          <Property Name="yetkiID" Type="int" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_odul_kontrol_odul_oneri">
+          <End Role="odul_oneri" Type="Self.odul_oneri" Multiplicity="0..1" />
+          <End Role="odul_kontrol" Type="Self.odul_kontrol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="odul_oneri">
+              <PropertyRef Name="odul_id" />
+            </Principal>
+            <Dependent Role="odul_kontrol">
+              <PropertyRef Name="odul_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_odul_kontrol_odul_user">
+          <End Role="odul_user" Type="Self.odul_user" Multiplicity="0..1" />
+          <End Role="odul_kontrol" Type="Self.odul_kontrol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="odul_user">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="odul_kontrol">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_odul_oneri_odul_tipi">
+          <End Role="odul_tipi" Type="Self.odul_tipi" Multiplicity="0..1" />
+          <End Role="odul_oneri" Type="Self.odul_oneri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="odul_tipi">
+              <PropertyRef Name="odulTipi_id" />
+            </Principal>
+            <Dependent Role="odul_oneri">
+              <PropertyRef Name="odulTipi_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_odul_oneri_odul_user">
+          <End Role="odul_user" Type="Self.odul_user" Multiplicity="0..1" />
+          <End Role="odul_oneri" Type="Self.odul_oneri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="odul_user">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="odul_oneri">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="odulSistemiModelStoreContainer">
+          <EntitySet Name="odul_kontrol" EntityType="Self.odul_kontrol" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="odul_oneri" EntityType="Self.odul_oneri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="odul_tipi" EntityType="Self.odul_tipi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="odul_user" EntityType="Self.odul_user" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_odul_kontrol_odul_oneri" Association="Self.FK_odul_kontrol_odul_oneri">
+            <End Role="odul_oneri" EntitySet="odul_oneri" />
+            <End Role="odul_kontrol" EntitySet="odul_kontrol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_odul_kontrol_odul_user" Association="Self.FK_odul_kontrol_odul_user">
+            <End Role="odul_user" EntitySet="odul_user" />
+            <End Role="odul_kontrol" EntitySet="odul_kontrol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_odul_oneri_odul_tipi" Association="Self.FK_odul_oneri_odul_tipi">
+            <End Role="odul_tipi" EntitySet="odul_tipi" />
+            <End Role="odul_oneri" EntitySet="odul_oneri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_odul_oneri_odul_user" Association="Self.FK_odul_oneri_odul_user">
+            <End Role="odul_user" EntitySet="odul_user" />
+            <End Role="odul_oneri" EntitySet="odul_oneri" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="odulSistemiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="odul_kontrol">
+          <Key>
+            <PropertyRef Name="kontrol_id" />
+          </Key>
+          <Property Name="kontrol_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="odul_id" Type="Int32" />
+          <Property Name="durum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="red_nedeni" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="red_tarihi" Type="DateTime" Precision="3" />
+          <Property Name="uygulama_tarihi" Type="DateTime" Precision="3" />
+          <Property Name="kabul_tarihi" Type="DateTime" Precision="3" />
+          <Property Name="user_id" Type="Int32" />
+          <NavigationProperty Name="odul_oneri" Relationship="Self.FK_odul_kontrol_odul_oneri" FromRole="odul_kontrol" ToRole="odul_oneri" />
+          <NavigationProperty Name="odul_user" Relationship="Self.FK_odul_kontrol_odul_user" FromRole="odul_kontrol" ToRole="odul_user" />
+        </EntityType>
+        <EntityType Name="odul_oneri">
+          <Key>
+            <PropertyRef Name="odul_id" />
+          </Key>
+          <Property Name="odul_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="Int32" />
+          <Property Name="odulTipi_id" Type="Int32" />
+          <Property Name="tanim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="odul_tarih" Type="DateTime" Precision="3" />
+          <Property Name="mevcut_durum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="yeni_durum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="fayda" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="status" Type="Int32" />
+          <NavigationProperty Name="odul_kontrol" Relationship="Self.FK_odul_kontrol_odul_oneri" FromRole="odul_oneri" ToRole="odul_kontrol" />
+          <NavigationProperty Name="odul_tipi" Relationship="Self.FK_odul_oneri_odul_tipi" FromRole="odul_oneri" ToRole="odul_tipi" />
+          <NavigationProperty Name="odul_user" Relationship="Self.FK_odul_oneri_odul_user" FromRole="odul_oneri" ToRole="odul_user" />
+        </EntityType>
+        <EntityType Name="odul_tipi">
+          <Key>
+            <PropertyRef Name="odulTipi_id" />
+          </Key>
+          <Property Name="odulTipi_id" Type="Int32" Nullable="false" />
+          <Property Name="tip_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="odul_oneri" Relationship="Self.FK_odul_oneri_odul_tipi" FromRole="odul_tipi" ToRole="odul_oneri" />
+        </EntityType>
+        <EntityType Name="odul_user">
+          <Key>
+            <PropertyRef Name="user_id" />
+          </Key>
+          <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kullanici_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sicilNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="unvan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="bolum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="yetkiID" Type="Int32" />
+          <NavigationProperty Name="odul_kontrol" Relationship="Self.FK_odul_kontrol_odul_user" FromRole="odul_user" ToRole="odul_kontrol" />
+          <NavigationProperty Name="odul_oneri" Relationship="Self.FK_odul_oneri_odul_user" FromRole="odul_user" ToRole="odul_oneri" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_odul_kontrol_odul_oneri">
+          <End Role="odul_oneri" Type="Self.odul_oneri" Multiplicity="0..1" />
+          <End Role="odul_kontrol" Type="Self.odul_kontrol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="odul_oneri">
+              <PropertyRef Name="odul_id" />
+            </Principal>
+            <Dependent Role="odul_kontrol">
+              <PropertyRef Name="odul_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_odul_kontrol_odul_user">
+          <End Role="odul_user" Type="Self.odul_user" Multiplicity="0..1" />
+          <End Role="odul_kontrol" Type="Self.odul_kontrol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="odul_user">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="odul_kontrol">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_odul_oneri_odul_tipi">
+          <End Role="odul_tipi" Type="Self.odul_tipi" Multiplicity="0..1" />
+          <End Role="odul_oneri" Type="Self.odul_oneri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="odul_tipi">
+              <PropertyRef Name="odulTipi_id" />
+            </Principal>
+            <Dependent Role="odul_oneri">
+              <PropertyRef Name="odulTipi_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_odul_oneri_odul_user">
+          <End Role="odul_user" Type="Self.odul_user" Multiplicity="0..1" />
+          <End Role="odul_oneri" Type="Self.odul_oneri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="odul_user">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="odul_oneri">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="odulSistemiEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="odul_kontrol" EntityType="Self.odul_kontrol" />
+          <EntitySet Name="odul_oneri" EntityType="Self.odul_oneri" />
+          <EntitySet Name="odul_tipi" EntityType="Self.odul_tipi" />
+          <EntitySet Name="odul_user" EntityType="Self.odul_user" />
+          <AssociationSet Name="FK_odul_kontrol_odul_oneri" Association="Self.FK_odul_kontrol_odul_oneri">
+            <End Role="odul_oneri" EntitySet="odul_oneri" />
+            <End Role="odul_kontrol" EntitySet="odul_kontrol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_odul_kontrol_odul_user" Association="Self.FK_odul_kontrol_odul_user">
+            <End Role="odul_user" EntitySet="odul_user" />
+            <End Role="odul_kontrol" EntitySet="odul_kontrol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_odul_oneri_odul_tipi" Association="Self.FK_odul_oneri_odul_tipi">
+            <End Role="odul_tipi" EntitySet="odul_tipi" />
+            <End Role="odul_oneri" EntitySet="odul_oneri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_odul_oneri_odul_user" Association="Self.FK_odul_oneri_odul_user">
+            <End Role="odul_user" EntitySet="odul_user" />
+            <End Role="odul_oneri" EntitySet="odul_oneri" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="odulSistemiModelStoreContainer" CdmEntityContainer="odulSistemiEntities">
+          <EntitySetMapping Name="odul_kontrol">
+            <EntityTypeMapping TypeName="odulSistemiModel.odul_kontrol">
+              <MappingFragment StoreEntitySet="odul_kontrol">
+                <ScalarProperty Name="kontrol_id" ColumnName="kontrol_id" />
+                <ScalarProperty Name="odul_id" ColumnName="odul_id" />
+                <ScalarProperty Name="durum" ColumnName="durum" />
+                <ScalarProperty Name="red_nedeni" ColumnName="red_nedeni" />
+                <ScalarProperty Name="red_tarihi" ColumnName="red_tarihi" />
+                <ScalarProperty Name="uygulama_tarihi" ColumnName="uygulama_tarihi" />
+                <ScalarProperty Name="kabul_tarihi" ColumnName="kabul_tarihi" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="odul_oneri">
+            <EntityTypeMapping TypeName="odulSistemiModel.odul_oneri">
+              <MappingFragment StoreEntitySet="odul_oneri">
+                <ScalarProperty Name="odul_id" ColumnName="odul_id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="odulTipi_id" ColumnName="odulTipi_id" />
+                <ScalarProperty Name="tanim" ColumnName="tanim" />
+                <ScalarProperty Name="odul_tarih" ColumnName="odul_tarih" />
+                <ScalarProperty Name="mevcut_durum" ColumnName="mevcut_durum" />
+                <ScalarProperty Name="yeni_durum" ColumnName="yeni_durum" />
+                <ScalarProperty Name="fayda" ColumnName="fayda" />
+                <ScalarProperty Name="status" ColumnName="status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="odul_tipi">
+            <EntityTypeMapping TypeName="odulSistemiModel.odul_tipi">
+              <MappingFragment StoreEntitySet="odul_tipi">
+                <ScalarProperty Name="odulTipi_id" ColumnName="odulTipi_id" />
+                <ScalarProperty Name="tip_adi" ColumnName="tip_adi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="odul_user">
+            <EntityTypeMapping TypeName="odulSistemiModel.odul_user">
+              <MappingFragment StoreEntitySet="odul_user">
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="kullanici_adi" ColumnName="kullanici_adi" />
+                <ScalarProperty Name="ad" ColumnName="ad" />
+                <ScalarProperty Name="soyad" ColumnName="soyad" />
+                <ScalarProperty Name="sifre" ColumnName="sifre" />
+                <ScalarProperty Name="sicilNo" ColumnName="sicilNo" />
+                <ScalarProperty Name="unvan" ColumnName="unvan" />
+                <ScalarProperty Name="bolum" ColumnName="bolum" />
+                <ScalarProperty Name="yetkiID" ColumnName="yetkiID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "KayitOl";
+}
+<form  action="/Home/KayitOl" method="post">
+    <table class="kayit_table" id="label" style="overflow: hidden;margin-left: auto;margin-right:auto;margin-top:20px;">
+        <caption id="baslikKayit" style="text-align: center;font-weight: bold;font-size: 30px">KAYIT OL</caption>
+        <tr>
+            <td><label for="kullaniciAdi">Kullanıcı Adı:</label></td>
+            <td width="100">
+                <input type="text" name="kullanici_adi" id="kullanici_adi" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required />
+                <span style="color:red; font-size:15px; padding-top:-5px;">
+                    @if (TempData["KullaniciMesaji"] != null)
+                    {
+                        @TempData["KullaniciMesaji"].ToString();
+                    }
+                </span>
+            </td>
+        <tr>
+            <td><label for="ad">Ad</label></td>
+            <td><input type="text" name="ad" id="ad" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required /></td>
+        </tr>
+        <tr>
+            <td><label for="soyad">Soyad:</label></td>
+            <td><input type="text" name="soyad" id="soyad" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required /></td>
+        </tr>
+        <tr>
+            <td><label for="soyad">Email Adresiniz:</label></td>
+            <td><input type="email" name="email" id="email" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required /></td>
+        </tr>
+        <tr>
+            <td><label for="sicilNo">Sicil No:</label></td>
+            <td><input type="text" name="sicilNo" id="sicilNo" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required /></td>
+        </tr>
+        <tr>
+            <td><label for="bolum">Bölüm:</label></td>
+            <td><input type="text" name="bolum" id="bolum" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required /></td>
+        </tr>
+        <tr>
+            <td><label for="unvan">Ünvan:</label></td>
+            <td><input type="text" name="unvan" id="unvan" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required /></td>
+
+        </tr>
+        <tr>
+            <td><label for="sifre">Şifre:</label></td>
+            <td><input type="password" name="sifre" id="sifre" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required /></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td colspan="2">
+                <input type="submit" style="border-style:double;border-width:3px;border-color:black;" value="KAYDET" name="KAYDET" />
+            </td>
+        </tr>
+    </table>
+    </form>

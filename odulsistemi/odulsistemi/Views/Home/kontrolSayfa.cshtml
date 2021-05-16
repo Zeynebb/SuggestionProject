@@ -1,0 +1,59 @@
+﻿@model odulsistemi.Models.odul_oneri
+@{
+    ViewBag.Title = "kontrolSayfa";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+<form>
+    <table class="form_table" id="label" style="overflow: hidden;margin-right: auto;margin-left: auto;margin-top: 50px;">
+        <caption id="baslikGiris" style="text-align: center;font-weight: bold;font-size:25px;margin-left:40px;">Kişisel Öneri Formu - Kontrol Et</caption>
+        <tr>
+            <td><label class="label_form" for="o_tipi" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Öneri Tipi:</label></td>
+            <td>
+                @Html.TextAreaFor(model => model.odul_tipi.tip_adi, new { style = "width:1000px;padding-left:2px; padding-right:2px; height:45px;background-color:white;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="tanim" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Öneri Tanımı:</label></td>
+            <td>
+                @Html.TextBoxFor(model => model.tanim, new { style = "width:1000px;padding-left:10px; padding-right:2px; height:40px; word-wrap:break-word;background-color:white;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="tarih" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Öneri Tarihi:</label></td>
+            <td>
+                @Html.TextBoxFor(model => model.odul_tarih, new { style = "width:1000px;padding-left:10px; padding-right:2px; height:40px; word-wrap:break-word;background-color:white;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="m_durum" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Mevcut Durum:</label></td>
+            <td>
+                @Html.TextAreaFor(model => model.mevcut_durum, new { style = "width:1000px;padding-left:4px; padding-right:2px; height:80px; word-wrap:break-word;background-color:white;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="y_durum" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Yeni Durum:</label></td>
+            <td>
+                @Html.TextAreaFor(model => model.yeni_durum, new { style = "width:1000px;padding-left:4px; padding-right:2px; height:80px; word-wrap:break-word;background-color:white;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="fayda" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Önerinin Getireceği Fayda:</label></td>
+            <td>
+                @Html.TextAreaFor(model => model.fayda, new { style = "width:1000px;padding-left:4px; padding-right:2px; height:80px; word-wrap:break-word;background-color:white;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="font-weight:bold;">
+                <a href="@Url.Action("adminSayfa", "Home")">
+                    <input type="button" class="kontrolGeri" value="GERİ DÖN" style="color:white;"/>
+                </a>
+                <a href="@Url.Action("onaylamaSayfasi", "Home", new { id = Model.odul_id })">
+                    <input type="button"  value="ONAYLA"  class="kontrolGeri" style="color:white;"/>
+                </a>
+                <a href="@Url.Action("reddetmeSayfasi", "Home", new { id = Model.odul_id })">
+                    <input type="button" class="kontrolGeri" value="REDDET" style="color:white;"/>
+                </a>
+</tr>
+    </table>
+</form> 

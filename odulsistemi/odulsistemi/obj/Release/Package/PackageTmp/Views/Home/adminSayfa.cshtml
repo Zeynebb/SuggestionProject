@@ -1,0 +1,79 @@
+﻿
+@using PagedList
+@using PagedList.Mvc
+@model List<odulsistemi.Models.odul_oneri>
+
+@{
+    ViewBag.Title = "adminSayfa";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+
+<html>
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css" />
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src=" https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
+
+
+
+</head>
+<body>
+    <h2 style="font-size: 20px;font-weight: bold; margin-left:40%;">Odul Listesi</h2>
+    <hr />
+    <table id="example" >
+        <thead>
+            <tr>
+                <th style="width:1px">NO</th>
+                <th style="width:1px">TARİH</th>
+                <th style="width:1px">AD SOYAD</th>
+                <th style="width:1px">SİCİL NO</th>
+                <th style="width:1px">ÖNERİ TİPİ</th>
+                <th style="width:1px"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td style="width:1px">
+                    @Html.DisplayFor(modelItem => item.odul_id)
+                </td>
+                <td style="width:1px">
+                    @Html.DisplayFor(modelItem => item.odul_tarih)
+                </td>
+                <td style="width:1px">
+                    @Html.DisplayFor(modelItem => item.odul_user.ad)
+                    @Html.DisplayFor(modelItem => item.odul_user.soyad)
+                </td>
+                <td style="width:1px">
+                    @Html.DisplayFor(modelItem => item.odul_tipi.tip_adi)
+                </td>
+                <td style="width:1px">
+                    @Html.ActionLink("Görüntüle", "goruntuleSayfa", new { id = item.odul_id }) |
+                    @Html.ActionLink("Kontrol Et", "kontrolSayfa", new { id = item.odul_id })
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

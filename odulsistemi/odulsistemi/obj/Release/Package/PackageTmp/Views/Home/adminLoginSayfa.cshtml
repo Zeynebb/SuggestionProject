@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "adminLoginSayfa";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<form id="tabloFormu_admin" style="z-index: 3;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 255px;
+    margin-right: auto;
+    margin-top: 70px;
+    text-align: center;
+    opacity: 0.8;
+    width: 800px;
+    height: 500px;
+    background-color: white;">
+    <table class="giris_table" style="overflow:hidden;margin-right: auto;margin-left: auto;margin-top:120px;">
+        <caption id="baslikGiris" style="text-align: center;font-weight: bold;font-size:25px;margin-left:40px;">YÖNETİCİ GİRİŞİ</caption>
+        <tr>
+            <td>
+                <label class="label_kayit" for="tanim" style="display: inline-block;margin-bottom: 5px;font-weight: bold;">Kullanıcı Adı:</label>
+            </td>
+            <td width="300"><input type="text" name="adminKullanici" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required/></td>
+        </tr>
+        <tr>
+            <td><label class="label_kayit" for="tanim" style="display: inline-block;margin-bottom: 5px;font-weight:bold;">Şifre:</label></td>
+            <td width="300"><input type="text" name="adminSifre" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p id="YoneticiButon">@Html.ActionLink("Kullanıcı Girişi", "Index", "Home", new { style= "float: left;" })</p>
+                <p id="kayitOlButon">@Html.ActionLink("Kayıt Ol", "KayitOl", "Home", new { style = "float: right;" })</p>
+            </td>
+        </tr>
+    </table>
+
+    <a href="@Url.Action("adminSayfa", "Home")"><input type="button" id="girisButon" value="GİRİŞ YAP"  style="border-style:double;border-width:3px;border-color:black;"/> </a>
+    <p class="uyariMesaji" style="color: darkred;font-weight: bold;font-size: 20px;margin-top: 20px;">
+        @if (TempData["adminUyari"] != null)
+        {
+            @TempData["adminUyari"].ToString();
+        }
+    </p>
+
+
+</form>
+
+

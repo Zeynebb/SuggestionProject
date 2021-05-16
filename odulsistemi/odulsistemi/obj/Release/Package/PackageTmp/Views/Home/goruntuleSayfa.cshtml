@@ -1,0 +1,136 @@
+﻿
+@using PagedList
+@using PagedList.Mvc
+@model odulsistemi.Models.odul_oneri
+
+@{
+    ViewBag.Title = "adminSayfa";
+    Layout = null;
+}
+
+<html>
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css" />
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src=" https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
+
+
+
+</head>
+<body>
+
+    <input type="button" style="background-color:#ffd800" value=" SAYFAYI YAZDIR " id="btnPrint" onclick="yazdir()" />
+    <h2 style="font-size: 20px;font-weight: bold; margin-left:40%;">Odul Listesi</h2>
+    <hr />
+    <form>
+        <table class="form_table" id="label" style="overflow: hidden;margin-right: auto;margin-left: auto;margin-top: 50px;">
+            <caption id="baslikGiris" style="text-align: center;font-weight: bold;font-size:25px;margin-left:40px;">Kişisel Öneri Formu </caption>
+            <tr>
+                <td><label class="label_form" for="o_tipi" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Öneri Verenin Ad Soyad:</label></td>
+                <td>
+                    @Html.DisplayFor(model => model.odul_user.ad)  @Html.DisplayFor(model => model.odul_user.soyad)
+                </td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="o_tipi" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Sicil No:</label></td>
+                <td>
+                    @Html.DisplayFor(model => model.odul_user.sicilNo)
+                </td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="o_tipi" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Çalıştığı Bölüm</label></td>
+                <td>
+                    @Html.DisplayFor(model => model.odul_user.bolum)
+                </td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="o_tipi" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Unvan:</label></td>
+                <td>
+                    @Html.DisplayFor(model => model.odul_user.unvan)
+                </td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="o_tipi" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Öneri Tipi:</label></td>
+                <td>
+                    @Html.DisplayFor(model => model.odul_tipi.tip_adi)
+                </td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="tanim" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Öneri Tanımı:</label></td>
+                <td>
+                    @Html.DisplayFor(model => model.tanim)
+                </td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="tarih" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Öneri Tarihi:</label></td>
+                <td>
+                    @Html.DisplayFor(model => model.odul_tarih)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="m_durum" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Mevcut Durum:</label></td>
+                <td>
+                    @Html.DisplayFor(model => model.mevcut_durum)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="y_durum" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Yeni Durum:</label></td>
+                <td>
+                    @Html.DisplayFor(model => model.yeni_durum)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="fayda" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Önerinin Getireceği Fayda:</label></td>
+                <td>
+                    @Html.DisplayFor(model => model.fayda)
+                </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td colspan="2">
+                    <a href="@Url.Action("adminSayfa", "Home")">
+                        <input type="button" id="btnPrint1" value="GERİ DÖN" name="geri" style="border-style: double;border-width: 3px;border-color: black;" />
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+    <script>
+        function yazdir() {
+            $("#btnPrint").hide();
+            $("#btnPrint1").hide();
+            window.print();
+        }
+    </script>
+</body>
+</html>

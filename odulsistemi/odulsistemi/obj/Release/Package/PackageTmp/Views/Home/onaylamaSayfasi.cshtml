@@ -1,0 +1,31 @@
+﻿@model odulsistemi.Models.odul_oneri
+
+@{
+    ViewBag.Title = "onaylamaSayfasi";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+<!--<form id="tabloFormu_beyaz" action="/Home/onaylamaSayfasi" method="post">-->
+   @using (Html.BeginForm("onaylamaSayfasi", "Home", FormMethod.Post, new { enctype = "multipart/formdata"}))
+   {
+        <table style="margin-top:80px; margin-left:auto;margin-right:auto;font-size:16px; text-align:right;" class="modal-body">
+            @Html.Hidden("odul_id", Model.odul_id)
+            
+            <tr>
+                <td><label style="margin-left:auto; margin-right:auto; font-weight:bold;font-size:20px;">Kabul Tarihi:</label></td>
+                <td><input type="date" name="kabul_tarihi" style="margin-left:auto; margin-right:auto; height:40px; width:400px;" required/></td>
+            </tr>
+            <tr>
+                <td> <label id="uygulamaTarih" style="margin-left:auto; margin-right:auto; font-weight:bold;font-size:20px;">Uygulama Tarihi:</label></td>
+                <td> <input type="date" name="uygulama_tarihi" style="margin-left:auto; margin-right:auto; height:40px; width:400px;" required /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="@Url.Action("kontrolSayfa", "Home",new { id = Model.odul_id})">
+                        <input type="button" class="btn btn-primary" id="geriDönButon" value="GERİ DÖN" name="kaydet" style="width:90px;color: black;background-color: #a19c9c;border-color: #a19c9c;" />
+                    </a>
+                    <input type="submit" value="ONAYLA" class="btn btn-primary" style="color: black;background-color: #a19c9c;border-color: #a19c9c;" />
+                </td>
+            </tr>
+        </table>
+   }

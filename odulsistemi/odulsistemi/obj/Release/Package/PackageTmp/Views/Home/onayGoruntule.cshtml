@@ -1,0 +1,87 @@
+﻿@model odulsistemi.ViewModel.OdulKontrol
+
+@{
+    ViewBag.Title = "onayGoruntule";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+
+<form>
+    <table class="form_table" id="label" style="overflow: hidden;margin-right: auto; margin-left: auto;margin-top: 50px;">
+        <caption id="baslikGiris" style="text-align: center;font-weight: bold;font-size:25px;margin-left:40px;">Kişisel Öneri Formu - Görüntüle</caption>
+        <tr>
+            <td><label class="label_form" for="o_tipi">Öneri Tipi:</label></td>
+            <td>
+                @Html.TextAreaFor(model => model.oneri.odul_tipi.tip_adi, new { style = "width:1000px;padding-left:2px; padding-right:2px; height:45px; word-wrap:break-word;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="tanim">Öneri Tanımı:</label></td>
+            <td>
+                @Html.TextBoxFor(model => model.oneri.tanim, new { style = "width:1000px;padding-left:2px; padding-right:2px; height:40px; word-wrap:break-word;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="tarih">Öneri Tarihi:</label></td>
+            <td>
+                @Html.TextBoxFor(model => model.oneri.odul_tarih, new { style = "width:1000px;padding-left:10px; padding-right:2px; height:40px; word-wrap:break-word;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="m_durum">Mevcut Durum:</label></td>
+            <td>
+                @Html.TextAreaFor(model => model.oneri.mevcut_durum, new { style = "width:1000px;padding-left:4px; padding-right:2px; height:80px; word-wrap:break-word;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="y_durum">Yeni Durum:</label></td>
+            <td>
+                @Html.TextAreaFor(model => model.oneri.yeni_durum, new { style = "width:1000px;padding-left:4px; padding-right:2px; height:80px; word-wrap:break-word;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="fayda">Önerinin Getireceği Fayda:</label></td>
+            <td>
+                @Html.TextAreaFor(model => model.oneri.fayda, new { style = "width:1000px;padding-left:4px; padding-right:2px; height:80px; word-wrap:break-word;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="fayda">Onay Durumu:</label></td>
+            <td>
+                @if (Model.oneri.status == 1)
+                {
+                    <label>Onay Bekliyor</label>
+                }
+                else if (Model.oneri.status == 2)
+                {
+                    <label>Onaylandı</label>
+                }
+                else if (Model.oneri.status == 3)
+                {
+                    <label>Reddedildi</label>
+                }
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="fayda">Kabul Tarihi</label></td>
+            <td>
+                @Html.TextBoxFor(model => model.kontrol.kabul_tarihi, new { style = "width:1000px;padding-left:4px; padding-right:2px; height:40px; word-wrap:break-word;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label_form" for="fayda">Uygulama Tarihi</label></td>
+            <td>
+                @Html.TextBoxFor(model => model.kontrol.uygulama_tarihi, new { style = "width:1000px;padding-left:4px; padding-right:2px; height:40px; word-wrap:break-word;", disabled = "disabled" })
+            </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td colspan="2">
+                <a href="@Url.Action("onaySayfa", "Home")">
+                    <input type="button" id="kaydetButon" value="GERİ DÖN" name="geri" style="border-style: double;border-width: 3px;border-color: black;" />
+                </a>
+            </td>
+        </tr>
+    </table>
+
+</form>
+

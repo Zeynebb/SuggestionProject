@@ -1,0 +1,65 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@model IPagedList<odulsistemi.Models.odul_oneri>
+@{
+    ViewBag.Title = "ikinciAnasayfa";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<body>
+    <form>
+        <table style="margin-left:auto; margin-right:auto; margin-top:20px;">
+            <caption id="onayBaslik" style="font-size: 20px;font-weight: bold;">ÖNERİLER</caption>
+            <tr style="background-color:#bcd2ee;">
+                <th style="height:50px; width:80px;border: 1px solid black; text-align:center;">NO</th>
+                <th style="width:80px;border: 1px solid black;text-align:center;">TARİH</th>
+                <th style="width:150px;border: 1px solid black;text-align:center;">AD SOYAD</th>
+                <th style="width:80px;border: 1px solid black;text-align:center;">SİCİL NO</th>
+                <th style="width:250px;border: 1px solid black;text-align:center;">ÖNERİ TANIMI</th>
+                <th style="width:120px;border: 1px solid black;text-align:center;">DURUM</th>
+                <th style="width:120px;border: 1px solid black;text-align:center;"></th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="background-color:white;height:50px; width:80px;border: 1px solid black; text-align:center;max-width:100px;word-wrap:break-word;">
+                        @Html.DisplayFor(modelItem => item.odul_id)
+                    </td>
+                    <td style="background-color:white; width:80px;border: 1px solid black;text-align:center;max-width:100px;word-wrap:break-word;">
+                        @Html.DisplayFor(modelItem => item.odul_tarih)
+                    </td>
+                    <td style="background-color:white; width:150px;border: 1px solid black;text-align:center;max-width:180px;word-wrap:break-word;">
+                        @Html.DisplayFor(modelItem => item.odul_user.ad)
+                        @Html.DisplayFor(modelItem => item.odul_user.soyad)
+                    </td>
+                    <td style="background-color:white; width:80px;border: 1px solid black;text-align:center;max-width:100px;word-wrap:break-word">
+                        @Html.DisplayFor(modelItem => item.odul_user.sicilNo)
+                    </td>
+                    <td style="background-color:white; width:250px;border: 1px solid black;text-align:center;max-width:300px;word-wrap:break-word;">
+                        @Html.DisplayFor(modelItem => item.odul_tipi.tip_adi)
+                    </td>
+
+                    <td style="background-color:white; width:100px;border: 1px solid black;text-align:center;max-width:100px;word-wrap:break-word;">
+
+                        @if (item.status == 1)
+                        {
+                            <label>Onay Bekliyor</label>
+                        }
+                        else if (item.status == 2)
+                        {
+                            <label>Onaylandı</label>
+                        }
+                        else if (item.status == 3)
+                        {
+                            <label>Reddedildi</label>
+                        }
+
+                    </td>
+                    <td style="background-color:white;font-weight:bold; width:80px;border: 1px solid black;text-align:center;max-width:100px;word-wrap:break-word">
+                        @Html.ActionLink("Görüntüle", "kullaniciGoruntule", new { id = item.odul_id })
+                    </td>
+                </tr>
+            }
+        </table>
+    </form>
+</body>
+

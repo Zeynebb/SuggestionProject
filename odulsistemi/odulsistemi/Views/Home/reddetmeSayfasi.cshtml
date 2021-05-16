@@ -1,0 +1,28 @@
+﻿@model odulsistemi.Models.odul_oneri
+@{
+    ViewBag.Title = "reddetmeSayfasi";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+    @using (Html.BeginForm("reddetmeSayfasi", "Home", FormMethod.Post, new { enctype = "multipart/formdata" }))
+{
+    @Html.Hidden("odul_id", Model.odul_id)
+    <table style="margin-left:auto; margin-right:auto; margin-top:80px; text-align:right;">
+        <tr>
+            <td><label style="margin-left:auto; margin-right:auto; font-weight:bold;font-size:20px;">Red Nedeni:</label></td>
+            <td><input type="text" name="red_nedeni" style="margin-left:auto; margin-right:auto; height:40px; width:400px;" required /></td>
+        </tr>
+        <tr>
+            <td><label style="margin-left:auto; margin-right:auto; font-weight:bold;font-size:20px;">Red Tarihi:</label></td>
+            <td><input type="date" name="red_tarihi" style="margin-left:auto; margin-right:auto; height:40px; width:400px;" required /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <a href="@Url.Action("kontrolSayfa", "Home", new { id = Model.odul_id })">
+                    <input type="button" class="onaylamaButton"  value="İPTAL ET" name="kaydet" formmethod="post" />
+                </a>
+                <input type="submit" value="KAYDET" class="onaylamaButton" />
+            </td>
+        </tr>
+    </table>
+}

@@ -1,0 +1,53 @@
+﻿@model odulsistemi.Models.odul_oneri
+
+@{
+    ViewBag.Title = "FormDoldur";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<form action="/Home/FormDoldur" method="post">
+    <table class="form_table" id="label" style=" overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;">
+        <caption id="baslikGiris" style=" text-align: center;
+    font-weight: bold;
+    font-size:25px;
+    margin-left:40px;">Kişisel Öneri Formu</caption>
+        @using (Html.BeginForm("FormDoldur", "Home", FormMethod.Post))
+        {
+            <tr>
+                <td><label class="label_form" for="odul_tipi" style=" display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Öneri Tipi:</label></td>
+                <td>
+                    @Html.DropDownList("odulTipi_id", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.odulTipi_id, "", new { style = "color: #b94a48;" })
+                </td>
+            </tr>
+
+            <tr>
+                <td><label class="label_form" for="tanim" style="display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Öneri Tanımı:</label></td>
+                <td><input type="text" name="tanim" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required /></td>
+            </tr>
+            @*<tr>
+                <td><label class="label_form" for="tarih" style=" display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Öneri Tarihi:</label></td>
+                <td><input type="date" name="odul_tarih" class="inputOzellik" style="width: 4000px;height:40px;word-wrap:break-word;padding-left:0px;padding-right:5px;" required /></td>
+            </tr>*@
+            <tr>
+                <td><label class="label_form" for="m_durum" style=" display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Mevcut Durum:</label></td>
+                <td><textarea rows="3" cols="40" name="mevcut_durum" class="inputOzellik_uzun" style="width: 6000px;height: 70px;word-wrap: break-word;padding-left: 5px;padding-right: 5px;padding-top:5px;" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="y_durum" style=" display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Yeni Durum:</label></td>
+                <td><textarea rows="3" cols="40" name="yeni_durum" class="inputOzellik_uzun" style="width: 6000px;height: 70px;word-wrap: break-word;padding-left: 5px;padding-right: 5px;padding-top:5px;" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label class="label_form" for="fayda" style=" display: inline-block;margin-bottom: 5px;font-weight: bold;font-size:20px;">Önerinin Getireceği Fayda:</label></td>
+                <td><textarea rows="3" cols="40" name="fayda" class="inputOzellik_uzun" style="width: 6000px;height: 70px;word-wrap: break-word;padding-left: 5px;padding-right: 5px;padding-top:5px;" required></textarea></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td colspan="2"><input type="submit" id="kaydetButon" value="Kaydet" name="kaydet" style="border-style: double;border-width: 3px;border-color: black;" /></td>
+            </tr>
+        }
+    </table>
+
+</form>
