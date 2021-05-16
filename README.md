@@ -39,3 +39,7 @@ Firma çalışanlarının, yöneticilere öneri sunduğu ASP.NET MVC ile yazılm
 
 > ![adminSayfa](https://user-images.githubusercontent.com/46132459/118413159-8a891c80-b6a6-11eb-92d8-b8a5f01ed0de.gif)
 
+### Veritabanı Diyagramı
+
+> ![databaseSP](https://user-images.githubusercontent.com/46132459/118414255-308b5580-b6ac-11eb-9801-843b3bc4c99b.PNG)
+
